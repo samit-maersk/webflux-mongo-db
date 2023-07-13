@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: @project.name@
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: custom
+      auto-index-creation: true
+
+logging:
+  level:
+    org:
+      mongodb:
+        driver:
+          protocol:
+            command: DEBUG
+      springframework:
+        data:
+          mongodb:
+            core: DEBUG
